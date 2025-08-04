@@ -2,37 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Login Page</title>
+  <title>CHARUSAT Login</title>
 </head>
 <body>
 
-  <h2 align="center">CHARUSAT - Student Portal Login</h2>
 
-  <table align="center" cellpadding="10" border="1">
+  <table">
     <tr>
-      <td><strong>Username:</strong></td>
-      <td><input type="text" name="username" /></td>
-    </tr>
-    <tr>
-      <td><strong>Password:</strong></td>
-      <td><input type="password" name="password" /></td>
-    </tr>
-    <tr>
-      <td colspan="2" align="center">
-        <a href="home.html">
-          <button type="button">Login</button>
-        </a>
+      <td align="center">
+        <h2>CHARUSAT Login Portal</h2>
+        <hr width="60%">
+        <p><b>Please login to continue</b></p>
       </td>
     </tr>
   </table>
 
-  <br /><br />
 
-  <div align="center">
-    <a href="index.html">
-      <button type="button">Back to Home</button>
-    </a>
-  </div>
+  <form action="home.html" method="get">
+    <table align="center" width="400" cellpadding="10" cellspacing="0" border="1">
+      <tr>
+        <td align="right" width="40%">User Type:</td>
+        <td width="60%">
+          <select name="userType">
+            <option value="">-- Select --</option>
+            <option value="student">Student</option>
+            <option value="faculty">Faculty</option>
+            <option value="admin">Admin</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td align="right">Username:</td>
+        <td><input type="text" name="username" size="30" placeholder="Enter your username"></td>
+      </tr>
+      <tr>
+        <td align="right">Password:</td>
+        <td><input type="password" name="password" size="30" placeholder="Enter your password"></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" value="Login">
+          &nbsp;&nbsp;
+          <input type="reset" value="Clear">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <small><a href="forgotpass.html">Forgot Password?</a></small>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+  <br><br>
+
+
+  <hr width="80%">
+  <table width="100%" cellpadding="10">
+    <tr>
+      <td align="center">
+        <small>© 2025 CHARUSAT University</small>
+      </td>
+    </tr>
+  </table>
 
 </body>
 </html>
